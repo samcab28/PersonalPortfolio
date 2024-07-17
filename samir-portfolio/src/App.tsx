@@ -7,6 +7,8 @@ import NavBarPrincipal from './components/NavBar'
 import BannerPrincipal from './components/Banner';
 import SkillsPrincipal from './components/Skills';
 import ProjectPrincipal from './components/Project';
+import StudiesPrincipal from './components/Studies';
+import ExperiencePrincipal from './components/Experience';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <BannerPrincipal/>
         <SkillsPrincipal/>
         <ProjectPrincipal/>
+        <StudiesPrincipal/>
+        <ExperiencePrincipal/>
       </div>
     </>
   )
