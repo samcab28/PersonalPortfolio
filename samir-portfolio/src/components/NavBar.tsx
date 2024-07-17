@@ -65,7 +65,7 @@ function NavBarPrincipal() {
                 <a href='https://linkedin.com/in/samir-cabrera'><LinkedInIcon/></a>
                 <a href='https://github.com/samcab28'><GitHubIcon/></a>
             </div>
-            <button className='vvd' onClick={() => console.log("Click")}>
+            <button className='vvd' onClick={() => document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' })}>
                 <span>Contact me</span>
             </button>
           </span>
