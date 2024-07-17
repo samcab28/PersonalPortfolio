@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+//import the styles
 import '../styles/NavBar.css'
 
 import Container from 'react-bootstrap/Container';
@@ -15,9 +16,11 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import logo from '../assets/img/logo.svg';
 
 function NavBarPrincipal() {
+  //setting home to the first one
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
+    //function for scroll detection
     useEffect(() =>{
         const onScroll = () => {
             if(window.scrollY > 50){
@@ -35,6 +38,7 @@ function NavBarPrincipal() {
         };
     }, [])
 
+    //function for update the link
     const onUpdateLink = (value: string) => {
         setActiveLink(value);
     };
@@ -54,6 +58,7 @@ function NavBarPrincipal() {
             <Nav.Link href="#skills" className={activeLink==='skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink==='projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateLink('projects')}>Projects</Nav.Link>
             <Nav.Link href="#studies" className={activeLink==='studies' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateLink('studies')}>Studies</Nav.Link>
+            <Nav.Link href="#experience" className={activeLink==='experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateLink('experience')}>Experience</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
