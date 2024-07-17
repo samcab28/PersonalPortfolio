@@ -10,8 +10,8 @@ function BannerPrincipal() {
     //string that contains the animation
     const toRotate = ["Backend Developer", "Frontend Developer", "Student"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
+    const [delta, setDelta] = useState(300 - Math.random() * 300);
+    const period = 300;
 
     //animation 
     useEffect(() => {
