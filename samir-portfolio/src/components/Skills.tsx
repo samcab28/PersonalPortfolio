@@ -47,7 +47,7 @@ function SkillsPrincipal(){
               <Col>
                 <div className="skill-bx">
                   <h2>
-                    skills
+                    Skills
                   </h2>
                   <p>
                     I am proficient in a range of technologies and tools that enhance my ability to deliver high-quality software solutions. My skills include:

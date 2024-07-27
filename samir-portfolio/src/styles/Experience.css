@@ -1,45 +1,49 @@
-/************ Experience CSS ************/
 .experience {
-  padding: 0 0 50px 0;
+  padding: 80px 0;
   position: relative;
+  color: #fff;
 }
 
-.experience-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
-}
-
-.experience h2 {
+.experience-h2 {
   font-size: 45px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.experience p {
-  color: #B8B8B8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
+.accordion .accordion-item {
+  background-color: #443c3c;
+  border: none;
+  border-radius: 20px;
+  margin: 10px 0;
 }
 
-.experience-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
+.accordion-button {
+  background-color: #443c3c;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  padding: 20px;
+  box-shadow: none;
+  outline: none;
 }
 
-.experience-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #5a5353;
+  box-shadow: none;
 }
 
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.accordion-body {
+  background-color: #5a5353;
+  color: #fff;
+  font-size: 16px;
+  padding: 20px;
+  line-height: 1.5;
 }

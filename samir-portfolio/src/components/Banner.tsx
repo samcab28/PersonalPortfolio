@@ -8,7 +8,7 @@ function BannerPrincipal() {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     //string that contains the animation
-    const toRotate = ["Backend Developer", "Frontend Developer", "Student"];
+    const toRotate = ["Student in Engineering","Backend Developer", "Frontend Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 300);
     const period = 300;
@@ -48,9 +48,6 @@ function BannerPrincipal() {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">
-                            Welcome to my portfolio
-                        </span>
                         <h1>
                             {"Hi, I am Samir and I'm a "}<span className="wrap">{text}</span>
                         </h1>

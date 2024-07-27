@@ -9,7 +9,6 @@ import SkillsPrincipal from './components/Skills';
 import ProjectPrincipal from './components/Project';
 import StudiesPrincipal from './components/Studies';
 import ExperiencePrincipal from './components/Experience';
-import ContactPrincipal from './components/Contact';
 import FooterPrincipal from './components/Footer';
 
 function App() {
@@ -21,9 +20,8 @@ function App() {
         <BannerPrincipal/>
         <SkillsPrincipal/>
         <ProjectPrincipal/>
-        <StudiesPrincipal/>
         <ExperiencePrincipal/>
-        <ContactPrincipal/>
+        <StudiesPrincipal/>
         <FooterPrincipal/>
       </div>
     </>

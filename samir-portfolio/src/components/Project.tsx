@@ -1,10 +1,6 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-
-//import styles
 import '../styles/Project.css';
 import ProjectCard from './ProjectCard';  
-
-//import from projects images
 import MaryGym from "../assets/img/projects/marygym.png";
 import Projecto3Visu from "../assets/img/projects/VisuProjecto3.png";
 
@@ -16,7 +12,6 @@ interface Project {
 }
 
 function ProjectPrincipal() {
-  // Array that holds projects
   const projects: Project[] = [
     {
       title: "Gym's Page",
@@ -25,8 +20,8 @@ function ProjectPrincipal() {
       link: "https://marygymfrontend-production.up.railway.app"
     },
     {
-        title: "Data Visualization Project",
-        description: "Graphs using Force-Directed Layout",
+      title: "Data Visualization Project",
+      description: "Graphs using Force-Directed Layout",
       imgUrl: Projecto3Visu, 
       link: "https://proyecto3visu.netlify.app"
     },
@@ -50,9 +45,6 @@ function ProjectPrincipal() {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab Two</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                </Nav.Item>
               </Nav>
             <br></br>
               <Tab.Content>
@@ -66,18 +58,7 @@ function ProjectPrincipal() {
                     ))}
                   </Row>
                 </Tab.Pane>
-
                 <Tab.Pane eventKey="second">
-                  <Row>
-                    <Col>
-                        <h3>
-                            Coming Soon!
-                        </h3>
-                    </Col>
-                  </Row>
-                </Tab.Pane>
-
-                <Tab.Pane eventKey="third">
                   <Row>
                     <Col>
                         <h3>
