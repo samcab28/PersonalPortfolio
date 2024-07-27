@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react';
+// src/components/NavBar.tsx
+import { useEffect, useState } from 'react';
 //import the styles
 import '../styles/NavBar.css'
 
@@ -43,6 +44,16 @@ function NavBarPrincipal() {
         setActiveLink(value);
     };
 
+    //function for download the PDF
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/pdf/SamirCabrera_Cv.pdf'; // Ruta al PDF en la carpeta public
+        link.download = 'SamirCabrera_CV.pdf';  // Nombre del archivo descargado
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
   return (
     <Navbar expand="lg"  className={scrolled ? "scrolled": ""}>
       <Container>
@@ -65,8 +76,8 @@ function NavBarPrincipal() {
                 <a href='https://linkedin.com/in/samir-cabrera'><LinkedInIcon/></a>
                 <a href='https://github.com/samcab28'><GitHubIcon/></a>
             </div>
-            <button className='vvd' onClick={() => document.getElementById('Contact')?.scrollIntoView({ behavior: 'smooth' })}>
-                <span>Contact me</span>
+            <button className='vvd' onClick={handleDownload}>
+                <span>Download CV</span>
             </button>
           </span>
         </Navbar.Collapse>

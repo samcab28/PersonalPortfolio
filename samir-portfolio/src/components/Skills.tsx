@@ -11,10 +11,11 @@ import 'react-multi-carousel/lib/styles.css';
 import WebDevIcon from '../assets/img/skills/webDev.png';
 import DBIcon from '../assets/img/skills/database.png';
 import Backend from '../assets/img/skills/backend.png';
-import React from '../assets/img/skills/react.png';
+import Api from '../assets/img/skills/api.png';
 import Cloud from '../assets/img/skills/cloud.png';
 import Git from '../assets/img/skills/git.png';
-import Typescript from '../assets/img/skills/typescript.png';
+import Docker from '../assets/img/skills/docker.png';
+import Frontend from '../assets/img/skills/frontend.png';
 
 function SkillsPrincipal(){
     //from carousel documentation   
@@ -69,13 +70,18 @@ function SkillsPrincipal(){
                     </div>
 
                     <div className="item">
-                        <img src={React} alt="ImageReact" />
-                        <h5>React Technologies</h5>
+                        <img src={Frontend} alt="ImageFrontend" />
+                        <h5>Frontend Development</h5>
                     </div>
 
                     <div className="item">
-                        <img src={Typescript} alt="ImageTypescript" />
-                        <h5>Typescript</h5>
+                        <img src={Api} alt="ImageApi" />
+                        <h5>Api Management</h5>
+                    </div>
+
+                    <div className="item">
+                        <img src={Docker} alt="ImageDocker" />
+                        <h5>Docker and Kubernetes</h5>
                     </div>
 
                     <div className="item">
@@ -85,7 +91,7 @@ function SkillsPrincipal(){
 
                     <div className="item">
                         <img src={Cloud} alt="ImageCloud" />
-                        <h5>Cloud</h5>
+                        <h5>Cloud Services</h5>
                     </div>
                   </Carousel>
                 </div>
